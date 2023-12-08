@@ -1,11 +1,12 @@
 package utility;
 
-import basetest.BaseTest;
+import browsefactory.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 public class Utility extends BaseTest {
+    //This method will click on element
     public void clickOnElement(By by) {
         WebElement element = driver.findElement(by);
         element.click();
@@ -31,7 +32,7 @@ public class Utility extends BaseTest {
     // This method will clear text from field
 
     public void clearTextFromField(By by) {
-        driver.findElement(by).sendKeys( Keys.CONTROL + "a");
+        driver.findElement(by).sendKeys(Keys.CONTROL + "a");
         driver.findElement(by).sendKeys(Keys.DELETE);
     }
 }

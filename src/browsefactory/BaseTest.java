@@ -1,4 +1,4 @@
-package basetest;
+package browsefactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,11 +15,10 @@ public class BaseTest {
         driver = new ChromeDriver(options);
         driver.get(url);// launch url
         driver.manage().window().maximize(); // maximising screen
-        driver.manage().timeouts().implicitlyWait( Duration.ofSeconds(2000)); // giving wait
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000)); // giving wait
     }
 
     public void closeBrowser() {
-        driver.quit();
+//        driver.quit();
     }
-
 }
